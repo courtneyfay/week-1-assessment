@@ -17,3 +17,25 @@
 /*#### Completed Requirements (CSS)
 - Use a single external CSS stylesheet to style all pages: ;																DONE
 */
+
+header {
+	background-color: blue;
+	height: 200px;
+}
+
+h1 {
+	color: blue;
+}
+
+ul {
+	color: blue;
+}
+
+footer {
+	color: gray;
+}
+
+@media (min-width: 1250px) {
+
+
+}
