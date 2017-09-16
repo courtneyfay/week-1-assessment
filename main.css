@@ -10,21 +10,64 @@
 - final product perfectly matches all items of page
 
 **Bonus:**
-- The repeating background image is oldschool. Can you do it with a CSS3 gradient? 
 - The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
+- Add @media queries for styling
 */
 
 /*#### Completed Requirements (CSS)
 - Use a single external CSS stylesheet to style all pages: ;																DONE
+- The repeating background image is oldschool. Can you do it with a CSS3 gradient? 											DONE
 */
 
 header {
-	background-color: blue;
-	height: 200px;
+	height: 400px;
+	width: 100%;
+	background: -webkit-linear-gradient(#4C7CA2, #2E618C);
+	background: -o-linear-gradient(#4C7CA2, #2E618C);
+	background: -moz-linear-gradient(#4C7CA2, #2E618C));
+	background: linear-gradient(#4C7CA2, #2E618C));
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+
+.logo-and-login {
+	float: right;
+	margin: 10% 7%;
+}
+
+.phones {
+	float: left;
+	margin: 10% 7%;
+}
+
+.introduction-text {
+	float: right;
+	position: relative;
+}
+
+.login-button {
+	background-color: #678FB0;
+	color: #CAD8E6;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	display: inline;
+    /*padding: 15px 32px;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    /*margin: 4px 2px;*/
+    
 }
 
 h1 {
 	color: blue;
+}
+
+h2 {
+	clear: both;
 }
 
 ul {
@@ -33,9 +76,5 @@ ul {
 
 footer {
 	color: gray;
-}
-
-@media (min-width: 1250px) {
-
-
+	clear: both;
 }
