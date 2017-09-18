@@ -1,7 +1,11 @@
 /*#### Requirements (CSS)
 
-- Fix font weight, size and color
-- Fix colors for gradient and button
+- Fix font colors
+- Fix colors for gradient and login button
+- fix drop shadow
+	- The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
+- Fix apple and google store buttons
+- Fix up footer
 - Look up and use at least two CSS properties and values that may not have been covered in class, for example:
   - `background: url("YOUR-LINK.COM")`
   - `list-style`
@@ -11,7 +15,6 @@
 - all major parts of CSS explained with comments, go through and delete everything that's been commented out that you don't need anymore
 
 **Bonus:**
-- The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
 - Add @media queries for phone and iPad styling
 */
 
@@ -41,10 +44,23 @@ header {
 }
 
 button {
-	border-radius: 3px;
+	border-radius: 5px;
 	cursor: pointer;
 	border: none;
-	background-color: pink;
+	/*background-color: pink;*/
+}
+
+.iPhone-button {
+	height: 51px;
+	width: 164px;
+	background-image: url("images/badge-iphone.png");
+}
+
+.Android-button {
+	height: 51px;
+	width: 153px;
+	background-image: url("images/badge-android.png");
+	margin: 5% 5%;
 }
 
 .container {
@@ -64,22 +80,24 @@ button {
 
 .introduction-text {
 	background-color: #FFFFFF;
-	float: right;
-	text-align: left;
-	padding: 4% 6% 4% 4%;
-	width: 50%;
 	box-shadow: 0px -1px .5px #888888;
 	border-radius: 7px;
+	width: 50%;
+	padding: 4% 6% 0px 4%;
+	float: right;
+	text-align: left;
+	/*background-image: url("images/frame.png");
+	background-repeat: no-repeat;
+	width: 50%;*/
+	
 }
 
 .login-button {
-	background-color: #678FB0;
 	color: #CAD8E6;
 	padding: 2%;
 	margin: 2.5% 0px 0px 0px;
 	width: 19%;
 	font-size: 11px;
-	cursor: pointer;
 	text-align: center;
 	border: none;
 	float: right;
@@ -135,10 +153,13 @@ ul {
 
 li {
 	display: inline;
+	color: #2E4D66;
+	margin: 0px 1%;
 }
 
 footer {
-	/*padding: 5% 0px 0px 0px;*/
+	padding: 4% 0px 0px 0px;
+	font-size: 12px;
 	text-align: center;
 	text-transform: uppercase;
 	color: gray;
