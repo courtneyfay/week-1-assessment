@@ -1,27 +1,22 @@
-/*#### Requirements (CSS)
-
-- Fix font colors
-- Fix colors for gradient and login button
-- fix drop shadow
-	- The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
-- Fix apple and google store buttons
-- Fix up footer
-- Look up and use at least two CSS properties and values that may not have been covered in class, for example:
-  - `background: url("YOUR-LINK.COM")`
-  - `list-style`
-  - `text-decoration`
-  - `text-transform`
-- final product perfectly matches all items of page
-- all major parts of CSS explained with comments, go through and delete everything that's been commented out that you don't need anymore
-
-**Bonus:**
-- Add @media queries for phone and iPad styling
-*/
-
 /*#### Completed Requirements (CSS)
 - Use a single external CSS stylesheet to style all pages: ;																DONE
 - The repeating background image is oldschool. Can you do it with a CSS3 gradient? 											DONE
 - Use display, clear, and floats to position elements on the page															DONE
+- Fix font colors																											DONE
+- Fix colors for gradient and login button																					DONE
+- fix drop shadow																											DONE
+	- The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
+- Fix apple and google store buttons																						DONE
+- Fix up footer																												DONE
+- final product perfectly matches all items of page																			EH
+- Look up and use at least two CSS properties and values that may not have been covered in class, for example:				DONE
+  - `background: url("YOUR-LINK.COM")`
+  - `list-style`
+  - `text-decoration`
+  - `text-transform`
+ - all major parts of CSS explained with comments																			DONE
+**Bonus:**
+- Add @media queries for phone and iPad styling																				NOPE
 */
 
 body {
@@ -30,24 +25,26 @@ body {
 }
 
 header {
-	height: 325px;
-	width: 100%;
 	/*adds a top to bottom gradient, from light blue to dark blue*/
 	background: -webkit-linear-gradient(#4C7CA2, #2E618C);
 	background: -o-linear-gradient(#4C7CA2, #2E618C);
 	background: -moz-linear-gradient(#4C7CA2, #2E618C));
 	background: linear-gradient(#4C7CA2, #2E618C));
+	/*positions the blue background on the page*/
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	z-index: -1;
+	/*sizes the blue background on the page*/
+	height: 325px;
+	width: 100%;
 }
 
 button {
+	/*styles all the buttons on the page*/
 	border-radius: 5px;
 	cursor: pointer;
 	border: none;
-	/*background-color: pink;*/
 }
 
 .iPhone-button {
@@ -68,10 +65,10 @@ button {
 }
 
 .logo-and-login {
+	/*positions box that contains the instagram logo and login button*/
 	float: right;
 	padding: 2% 0px 2% 0px;
 	width: 60%;
-	/*vertical-align: middle;*/
 }
 
 .phones {
@@ -79,71 +76,72 @@ button {
 }
 
 .introduction-text {
-	background-color: #FFFFFF;
-	box-shadow: 0px -1px .5px #888888;
+	text-align: left;
 	border-radius: 7px;
 	width: 50%;
 	padding: 4% 6% 0px 4%;
 	float: right;
-	text-align: left;
+	/*Still need to figure out how to make the sideburns go away so it fades away at 50%*/
+	background-color: #FFFFFF;
+	box-shadow: 0px -2px .5px #888888;
+	/*fiddling with the background image*/
 	/*background-image: url("images/frame.png");
 	background-repeat: no-repeat;
 	width: 50%;*/
-	
 }
 
 .login-button {
+	/*font styling*/
+	font-size: 11px;
 	color: #CAD8E6;
+	text-align: center;
+	/*there is actually some sort of border that I need to add--might be a box shadow?*/
+	/*position styling*/
 	padding: 2%;
 	margin: 2.5% 0px 0px 0px;
 	width: 19%;
-	font-size: 11px;
-	text-align: center;
-	border: none;
 	float: right;
 	/*adds a top to bottom gradient, from light blue to dark blue*/
 	background: -webkit-linear-gradient(#4C7CA2, #2E618C);
 	background: -o-linear-gradient(#4C7CA2, #2E618C);
 	background: -moz-linear-gradient(#4C7CA2, #2E618C));
 	background: linear-gradient(#4C7CA2, #2E618C));
-	/*vertical-align: middle;*/
-	/*border: solid black .5px;*/
-	/*display: inline;*/
-    /*text-decoration: none;*/
-    /*display: inline-block;*/
-    /*margin: 4px 2px;*/
 }
 
 h1 {
-	color: #2E4D66;
-	margin: 0;
+	/*styles font for "Capture and Share" heading*/
 	font-size: 30px;
 	font-weight: 500;
 	letter-spacing: 1px;
+	color: #2E4D66;
+	margin: 0;
 }
 
 h2 {
+	/*styles font for "log in" on login button*/
+	font-size: 16px;
+	font-weight: 500;
+	/*positions login text within the login button*/
 	display: inline;
 	vertical-align: middle;
 	margin: 0px 0px 0px 4%;
-	font-size: 16px;
-	font-weight: 500;
-	/*padding: 0px 0px 0px 1%;*/
 }
 
 .home-icon {
+	/*FANCY NEW PROPERTYYY 1*/
 	vertical-align: middle;
 }
 
 p {
+	/*styles the font for the intro text*/
 	font-weight: 300;
 	letter-spacing: .5px;
 	line-height: 25px;
 }
 
 span {
+	/*makes the adjectives bold*/
 	font-weight: 700;
-	/*text-decoration: underline;*/
 }
 
 ul {
@@ -158,10 +156,13 @@ li {
 }
 
 footer {
-	padding: 4% 0px 0px 0px;
+	/*styles the font for the footer*/
 	font-size: 12px;
 	text-align: center;
+	/*FANCY NEW PROPERTYYY 2*/
 	text-transform: uppercase;
 	color: gray;
+	/*positions the footer*/
 	clear: both;
+	padding: 4% 0px 0px 0px;
 }
