@@ -1,7 +1,6 @@
 <!-- #### Requirements (HTML)
 
-- the Git repository had at least 10 commits over 3 days - 5 commits on Saturday, ? commits on Sunday, ? commits on Monday
-- Construct the appropriate elements on the page
+- the Git repository had at least 10 commits over 3 days - 5 commits on Saturday, 1 commit on Sunday, ? commits on Monday
 - all major parts of HTML explained with comments
 -->
 
@@ -15,7 +14,8 @@
   - App Store and Google Play buttons
   - Instagram Logo
   - Login button 																				DONE 
-- Use `section` tags for the main areas of the page												DONE -->
+- Use `section` tags for the main areas of the page												DONE 
+- Construct the appropriate elements on the page												DONE -->
 
 
   <!DOCTYPE HTML>
@@ -32,20 +32,25 @@
 
 
   		<body>
-
+			
+			<!-- The blue gradient at the top of the page -->
 			<header>
 
 			</header>
 
+			<!-- Contains everything in the body of the website -->
 			<section class="container">
 
+				<!-- Instagram logo and login button sub-section -->
 				<section class="logo-and-login">
 
-					<img src="images/brand.png" alt="image of Instagram logo">
+					<!-- Instagram logo -->
+					<img class="instagram-logo" src="images/brand.png" alt="image of Instagram logo">
 
+					<!-- login button -->
 					<button class="login-button">
 
-						<img src="images/home.png" alt="image of home icon">
+						<img class="home-icon" src="images/home.png" alt="image of home icon">
 
 						<h2>Log in</h2>
 
@@ -53,27 +58,33 @@
 
 				</section>
 
+				<!-- Image of phones sub-section -->
 				<section class="phones">
 					
 					<img src="images/phones.png" alt="image of Android and iPhone with Instagram app open">
 
 				</section>
 
+				<!-- Introductory text and download buttons sub-section -->
 				<section class="introduction-text">
 
 					<h1>Capture and Share the World's Moments</h1>
 
-					<p>Instagram is a fast, beautiful and fun way to share your life with friends and family.</p>
+					<p>Instagram is a 
+
+						<span>fast,</span> 
+
+						<span>beautiful</span> 
+
+						and 
+
+						<span>fun</span> 
+						
+						way to share your life with friends and family.</p>
 
 					<p>Take a picture or video, choose a filter to transform its look and feel, then post to Instagram -- it's that easy. You can even share to Facebook, Twitter, Tumblr and more. It's a new way to see the world.</p>
 
 					<p>Oh yeah, did we mention it's free?</p>
-
-					<button class="Android-button">
-					
-						<img src="images/badge-android.png" alt="image of Android Play store link">
-
-					</button>
 
 					<button class="iPhone-button">
 
@@ -81,10 +92,18 @@
 
 					</button>
 
+					<button class="Android-button">
+					
+						<img src="images/badge-android.png" alt="image of Android Play store link">
+
+					</button>
+
 				</section>
 
 			</section>
 
+
+			<!-- Footer contains links and copyright info -->
   			<footer>
 
   				<ul class="nav links">

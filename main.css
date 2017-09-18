@@ -7,7 +7,7 @@
   - `text-decoration`
   - `text-transform`
 - final product perfectly matches all items of page
-- all major parts of CSS explained with comments
+- all major parts of CSS explained with comments, go through and delete everything that's been commented out that you don't need anymore
 
 **Bonus:**
 - The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
@@ -36,34 +36,50 @@ header {
 	z-index: -1;
 }
 
+button {
+	border-radius: 3px;
+}
+
 .container {
-	margin: 11% 8%;
+	margin: 11% 8% 11% 12%;
 }
 
 .logo-and-login {
 	float: right;
+	/*padding: 3%;*/
+	width: 61%;
+}
+
+.instagram-logo {
+	padding: 0px 5% 0px 0px;
+	/*display: inline;*/
 }
 
 .phones {
+	width: 38%;
 	float: left;
 }
 
 .introduction-text {
+	background-color: #FFFFFF;
 	float: right;
+	border-radius: 10px;
 	text-align: left;
-	width: 50%;
-	box-shadow: 10px 10px 5px #888888;
+	padding: 3%;
+	width: 55%;
+	box-shadow: 0px 15px 20px #888888;
 }
 
 .login-button {
 	background-color: #678FB0;
 	color: #CAD8E6;
-	font-size: 16px;
+	padding: 2%;
+	font-size: 11px;
 	cursor: pointer;
 	text-align: center;
 	border: none;
-	display: inline;
-    /*padding: 15px 32px;*/
+	float: right;
+	/*display: inline;*/
     /*text-decoration: none;*/
     /*display: inline-block;*/
     /*margin: 4px 2px;*/
@@ -71,10 +87,28 @@ header {
 
 h1 {
 	color: #2E4D66;
+	font-size: 30px;
+	font-weight: 700;
 }
 
 h2 {
-	clear: both;
+	display: inline;
+	vertical-align: middle;
+	padding: 0px 0px 0px 1%;
+}
+
+.home-icon {
+	vertical-align: middle;
+}
+
+p {
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+span {
+	font-weight: 800;
 }
 
 ul {
@@ -87,6 +121,7 @@ li {
 }
 
 footer {
+	padding: 5% 0px 0px 0px;
 	text-align: center;
 	text-transform: uppercase;
 	color: gray;
