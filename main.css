@@ -6,18 +6,22 @@
   - `list-style`
   - `text-decoration`
   - `text-transform`
-- all major parts of CSS explained with comments
 - final product perfectly matches all items of page
+- all major parts of CSS explained with comments
 
 **Bonus:**
 - The 'frame.png' image is also unnecessary. Can you do it with `box-shadow`, `border-radius`, and `position: relative`?
-- Add @media queries for styling
+- Add @media queries for phone and iPad styling
 */
 
 /*#### Completed Requirements (CSS)
 - Use a single external CSS stylesheet to style all pages: ;																DONE
 - The repeating background image is oldschool. Can you do it with a CSS3 gradient? 											DONE
 */
+
+* {
+	font-family: sans-serif;
+}
 
 header {
 	height: 400px;
@@ -32,19 +36,23 @@ header {
 	z-index: -1;
 }
 
+.container {
+	margin: 11% 8%;
+}
+
 .logo-and-login {
 	float: right;
-	margin: 10% 7%;
 }
 
 .phones {
 	float: left;
-	margin: 10% 7%;
 }
 
 .introduction-text {
 	float: right;
-	position: relative;
+	text-align: left;
+	width: 50%;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .login-button {
@@ -59,11 +67,10 @@ header {
     /*text-decoration: none;*/
     /*display: inline-block;*/
     /*margin: 4px 2px;*/
-    
 }
 
 h1 {
-	color: blue;
+	color: #2E4D66;
 }
 
 h2 {
@@ -72,9 +79,16 @@ h2 {
 
 ul {
 	color: blue;
+	display: inline;
+}
+
+li {
+	display: inline;
 }
 
 footer {
+	text-align: center;
+	text-transform: uppercase;
 	color: gray;
 	clear: both;
 }
